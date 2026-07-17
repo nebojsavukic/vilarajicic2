@@ -9,15 +9,15 @@
 <meta name="description" content="Villa Rajčić — event centar u Kragujevcu za venčanja, proslave i korporativne događaje. Elegantan ambijent, kapacitet do 150 gostiju, ketering i puna organizacija. Rezervišite obilazak.">
 <meta name="keywords" content="event centar Kragujevac, venčanja Kragujevac, sala za proslave, Villa Rajčić, korporativni događaji, ketering">
 <meta name="author" content="Villa Rajčić">
-<link rel="canonical" href="https://nebojsavukic.github.io/vilarajicic/">
+<link rel="canonical" href="https://nebojsavukic.github.io/vilarajicic2/">
 <link rel="icon" href="slike/logo.png" type="image/png">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Villa Rajčić — Event Centar">
 <meta property="og:description" content="Mesto stvoreno za svečanosti — venčanja, proslave i korporativne događaje u elegantnom ambijentu. Kapacitet do 150 gostiju.">
-<meta property="og:image" content="https://nebojsavukic.github.io/vilarajicic/slike/bazen-hero.jpg">
-<meta property="og:url" content="https://nebojsavukic.github.io/vilarajicic/">
+<meta property="og:image" content="https://nebojsavukic.github.io/vilarajicic2/slike/bazen-hero.jpg">
+<meta property="og:url" content="https://nebojsavukic.github.io/vilarajicic2/">
 <meta property="og:site_name" content="Villa Rajčić">
 <meta property="og:locale" content="sr_RS">
 
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Villa Rajčić — Event Centar">
 <meta name="twitter:description" content="Mesto stvoreno za svečanosti — venčanja, proslave i korporativne događaje u elegantnom ambijentu.">
-<meta name="twitter:image" content="https://nebojsavukic.github.io/vilarajicic/slike/bazen-hero.jpg">
+<meta name="twitter:image" content="https://nebojsavukic.github.io/vilarajicic2/slike/bazen-hero.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,9 +72,9 @@
   body.menu-open .nav-toggle span:nth-child(2){opacity:0}
   body.menu-open .nav-toggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 
-  .hero{position:relative;min-height:100vh;display:flex;align-items:center;
+  .hero{position:relative;min-height:82vh;display:flex;align-items:center;
     background:linear-gradient(rgba(20,17,12,.5),rgba(20,17,12,.62)),
-      url('slike/bazen-hero.jpg') center/cover no-repeat;
+      url('slike/bazen-hero.jpg') center/cover no-repeat, var(--ink);
     background-attachment:scroll;
     color:var(--paper)}
   .hero-inner{max-width:760px}
@@ -89,20 +89,20 @@
   .btn-dark:hover{background:var(--gold);color:var(--paper)}
   .scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:rgba(247,243,236,.6);writing-mode:vertical-rl}
 
-  section{padding:120px 0}
-  .section-head{text-align:center;max-width:640px;margin:0 auto 70px}
-  .section-head .eyebrow{display:block;margin-bottom:18px}
+  section{padding:72px 0}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 40px}
+  .section-head .eyebrow{display:block;margin-bottom:12px}
   .section-head h2{font-size:clamp(34px,5vw,54px)}
-  .section-head p{margin-top:20px;color:var(--stone)}
+  .section-head p{margin-top:14px;color:var(--stone)}
 
   .intro{background:var(--paper-deep)}
-  .intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+  .intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
   .intro-grid h2{font-size:clamp(32px,4.4vw,50px);margin:20px 0 24px}
   .intro-grid p{color:var(--stone);margin-bottom:20px}
   .intro-img{position:relative;aspect-ratio:4/5;overflow:hidden}
   .intro-img img{width:100%;height:100%;object-fit:cover}
   .intro-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(247,243,236,.5);pointer-events:none}
-  .stats{display:flex;flex-wrap:wrap;gap:20px;margin-top:34px}
+  .stats{display:flex;flex-wrap:wrap;gap:20px;margin-top:24px}
   .stat{flex:1;min-width:120px}
   .stat .num{font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--gold);line-height:1}
   .stat .lbl{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);margin-top:6px}
@@ -137,7 +137,7 @@
   .price-note{text-align:center;margin-top:40px;color:var(--stone);font-size:14px}
 
   .quote{background:var(--paper-deep)}
-  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .qcard{background:var(--paper);padding:40px 34px;border-top:2px solid var(--gold)}
   .qcard .mark{font-family:'Cormorant Garamond',serif;font-size:60px;line-height:.5;color:var(--gold-soft);height:26px;display:block}
   .qcard p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;line-height:1.4;color:var(--ink);margin-bottom:22px}
@@ -186,19 +186,19 @@
   /* ================= ANIMACIJE ================= */
   :root{--ease:cubic-bezier(.16,1,.3,1)}
 
-  /* --- scroll reveal (osnovni) --- */
-  .reveal{opacity:0;transform:translateY(34px);
-    transition:opacity 1s var(--ease),transform 1s var(--ease)}
-  .reveal.in{opacity:1;transform:none}
+  /* --- scroll reveal (osnovni) — aktivno samo uz JS --- */
+  .js .reveal{opacity:0;transform:translateY(16px);
+    transition:opacity .55s var(--ease),transform .55s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
 
   /* --- hero: staggered ulaz --- */
-  .hero-el{opacity:0;transform:translateY(22px);
-    animation:heroIn .9s var(--ease) forwards;animation-delay:var(--d,0s)}
+  .js .hero-el{opacity:0;transform:translateY(22px);
+    animation:heroIn .6s var(--ease) forwards;animation-delay:var(--d,0s)}
   @keyframes heroIn{to{opacity:1;transform:none}}
 
   .hero-title .line{display:block;overflow:hidden}
-  .hero-title .w{display:inline-block;transform:translateY(105%);
-    animation:wordUp 1s var(--ease) forwards;animation-delay:var(--d,0s)}
+  .js .hero-title .w{display:inline-block;transform:translateY(105%);
+    animation:wordUp .7s var(--ease) forwards;animation-delay:var(--d,0s)}
   @keyframes wordUp{to{transform:translateY(0)}}
 
   /* --- hero: spori zoom pozadine --- */
@@ -216,32 +216,32 @@
     transition:transform .1s linear}
 
   /* --- galerija: stagger + zoom --- */
-  .gallery figure{opacity:0;transform:translateY(30px) scale(.97);
-    transition:opacity .9s var(--ease),transform .9s var(--ease)}
-  .gallery.in figure{opacity:1;transform:none}
-  .gallery.in figure:nth-child(1){transition-delay:.05s}
-  .gallery.in figure:nth-child(2){transition-delay:.14s}
-  .gallery.in figure:nth-child(3){transition-delay:.23s}
-  .gallery.in figure:nth-child(4){transition-delay:.32s}
-  .gallery.in figure:nth-child(5){transition-delay:.41s}
+  .js .gallery figure{opacity:0;transform:translateY(16px) scale(.985);
+    transition:opacity .5s var(--ease),transform .5s var(--ease)}
+  .js .gallery.in figure{opacity:1;transform:none}
+  .js .gallery.in figure:nth-child(1){transition-delay:0.02s}
+  .js .gallery.in figure:nth-child(2){transition-delay:0.06s}
+  .js .gallery.in figure:nth-child(3){transition-delay:0.1s}
+  .js .gallery.in figure:nth-child(4){transition-delay:0.14s}
+  .js .gallery.in figure:nth-child(5){transition-delay:0.18s}
   .gallery figure:hover img{transform:scale(1.07)}
 
   /* --- cenovnik: stagger + lift --- */
-  .pricing-grid .plan{opacity:0;transform:translateY(36px);
-    transition:opacity .9s var(--ease),transform .9s var(--ease),box-shadow .4s}
-  .pricing-grid.in .plan{opacity:1;transform:none}
-  .pricing-grid.in .plan:nth-child(1){transition-delay:.05s}
-  .pricing-grid.in .plan:nth-child(2){transition-delay:.18s}
-  .pricing-grid.in .plan:nth-child(3){transition-delay:.31s}
+  .js .pricing-grid .plan{opacity:0;transform:translateY(18px);
+    transition:opacity .5s var(--ease),transform .5s var(--ease),box-shadow .4s}
+  .js .pricing-grid.in .plan{opacity:1;transform:none}
+  .js .pricing-grid.in .plan:nth-child(1){transition-delay:0.02s}
+  .js .pricing-grid.in .plan:nth-child(2){transition-delay:0.08s}
+  .js .pricing-grid.in .plan:nth-child(3){transition-delay:0.14s}
   .plan:hover{transform:translateY(-10px);box-shadow:0 22px 50px rgba(20,17,12,.13)}
 
   /* --- utisci: stagger --- */
-  .quotes .qcard{opacity:0;transform:translateY(30px);
-    transition:opacity .9s var(--ease),transform .9s var(--ease)}
-  .quotes.in .qcard{opacity:1;transform:none}
-  .quotes.in .qcard:nth-child(1){transition-delay:.05s}
-  .quotes.in .qcard:nth-child(2){transition-delay:.18s}
-  .quotes.in .qcard:nth-child(3){transition-delay:.31s}
+  .js .quotes .qcard{opacity:0;transform:translateY(16px);
+    transition:opacity .5s var(--ease),transform .5s var(--ease)}
+  .js .quotes.in .qcard{opacity:1;transform:none}
+  .js .quotes.in .qcard:nth-child(1){transition-delay:0.02s}
+  .js .quotes.in .qcard:nth-child(2){transition-delay:0.08s}
+  .js .quotes.in .qcard:nth-child(3){transition-delay:0.14s}
 
   /* --- statistika: odometar --- */
   .stat .num{font-variant-numeric:tabular-nums}
@@ -270,7 +270,7 @@
 
   /* ---- TABLET ---- */
   /* ---- LOKACIJA ---- */
-  .loc-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:stretch}
+  .loc-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:stretch}
   .loc-map{min-height:380px;border:1px solid rgba(247,243,236,.16);overflow:hidden}
   .loc-map iframe{display:block;width:100%;height:100%;min-height:380px;border:0;
     filter:grayscale(1) contrast(1.05)}
@@ -288,11 +288,11 @@
 
   @media(max-width:1024px){
     .wrap{padding:0 26px}
-    .intro-grid{gap:50px}
+    .intro-grid{gap:34px}
     .pricing-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
     .plan.featured{order:-1}
     .contact-grid{grid-template-columns:1fr;gap:44px}
-    section{padding:96px 0}
+    section{padding:60px 0}
   }
 
   /* ---- MOBILE NAV + LAYOUT ---- */
@@ -316,19 +316,19 @@
     header.scrolled nav a{color:var(--paper)}
     body.menu-open{overflow:hidden}
 
-    .intro-grid{grid-template-columns:1fr;gap:44px}
+    .intro-grid{grid-template-columns:1fr;gap:30px}
     .quotes{grid-template-columns:1fr}
     .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
-    .section-head{margin-bottom:52px}
-    section{padding:80px 0}
-    .hero{background-attachment:scroll;min-height:88vh}
+    .section-head{margin-bottom:32px}
+    section{padding:52px 0}
+    .hero{background-attachment:scroll;min-height:72vh}
     .hero-rule{margin:26px 0}
   }
 
   /* ---- SMALL PHONES ---- */
   @media(max-width:520px){
     .wrap{padding:0 20px}
-    .hero{min-height:82vh}
+    .hero{min-height:66vh}
     .hero p{font-size:16px}
     .btn{padding:14px 30px;font-size:11px;letter-spacing:.18em;display:block;text-align:center}
     .stats{gap:14px}
@@ -355,6 +355,7 @@
     *{scroll-behavior:auto}
   }
 </style>
+<script>document.documentElement.className+=' js';</script>
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div>
@@ -379,14 +380,14 @@
 
 <section class="hero" id="top">
   <div class="wrap hero-inner">
-    <span class="eyebrow hero-el" style="--d:.2s">Event centar · Rezervacije otvorene</span>
+    <span class="eyebrow hero-el" style="--d:.05s">Event centar · Rezervacije otvorene</span>
     <h1 class="hero-title">
-      <span class="line"><span class="w" style="--d:.40s">Gde</span> <span class="w" style="--d:.48s">se</span> <span class="w" style="--d:.56s">trenuci</span></span>
-      <span class="line"><span class="w" style="--d:.64s">pretvaraju</span> <span class="w" style="--d:.72s">u</span> <span class="w" style="--d:.80s"><em>uspomene</em></span></span>
+      <span class="line"><span class="w" style="--d:.14s">Gde</span> <span class="w" style="--d:.19s">se</span> <span class="w" style="--d:.24s">trenuci</span></span>
+      <span class="line"><span class="w" style="--d:.29s">pretvaraju</span> <span class="w" style="--d:.34s">u</span> <span class="w" style="--d:.39s"><em>uspomene</em></span></span>
     </h1>
-    <div class="hero-rule hero-el" style="--d:1.0s"></div>
-    <p class="hero-el" style="--d:1.15s">Villa Rajčić je mesto stvoreno za svečanosti svake vrste — venčanja, proslave, korporativne događaje i intimna okupljanja, u ambijentu koji odiše elegancijom.</p>
-    <a href="#cenovnik" class="btn hero-el" style="--d:1.3s">Pogledajte cenovnik</a>
+    <div class="hero-rule hero-el" style="--d:.46s"></div>
+    <p class="hero-el" style="--d:.52s">Villa Rajčić je mesto stvoreno za svečanosti svake vrste — venčanja, proslave, korporativne događaje i intimna okupljanja, u ambijentu koji odiše elegancijom.</p>
+    <a href="#cenovnik" class="btn hero-el" style="--d:.58s">Pogledajte cenovnik</a>
   </div>
   <span class="scroll-cue">Skrolujte</span>
 </section>
@@ -399,9 +400,9 @@
       <p>Već godinama Villa Rajčić ugošćuje najvažnije trenutke naših gostiju. Spoj prefinjene arhitekture, pažljivo negovanog vrta i vrhunske usluge čini svaki događaj jedinstvenim.</p>
       <p>Naš tim posvećen je svakom detalju — od prvog razgovora do poslednjeg gosta — kako bi vaš dan protekao onako kako ste ga oduvek zamišljali.</p>
       <div class="stats">
-        <div class="stat"><div class="num" data-count="150">0</div><div class="lbl">Mesta u sali</div></div>
-        <div class="stat"><div class="num" data-count="2">0</div><div class="lbl">Svečane sale</div></div>
-        <div class="stat"><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">Događaja</div></div>
+        <div class="stat"><div class="num" data-count="150">150</div><div class="lbl">Mesta u sali</div></div>
+        <div class="stat"><div class="num" data-count="2">2</div><div class="lbl">Svečane sale</div></div>
+        <div class="stat"><div class="num" data-count="500" data-suffix="+">500+</div><div class="lbl">Događaja</div></div>
       </div>
     </div>
     <div class="intro-img reveal">
@@ -625,17 +626,18 @@
 </footer>
 
 <script>
+try{
   const header=document.getElementById('header');
   addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>60));
   const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
   // Stagger kontejneri (galerija, cenovnik, utisci)
   const stagger=new IntersectionObserver(es=>es.forEach(e=>{
     if(e.isIntersecting){e.target.classList.add('in');stagger.unobserve(e.target)}
-  }),{threshold:.15});
+  }),{threshold:0,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.gallery,.pricing-grid,.quotes').forEach(el=>stagger.observe(el));
 
   // Traka napretka pri skrolovanju
@@ -651,6 +653,7 @@
   const animateCount=el=>{
     const target=+el.dataset.count, suffix=el.dataset.suffix||'';
     if(reduce){el.textContent=target+suffix;return}
+    el.textContent='0'+suffix;
     const dur=1600, t0=performance.now();
     const tick=now=>{
       const p=Math.min((now-t0)/dur,1);
@@ -662,7 +665,7 @@
   };
   const countIO=new IntersectionObserver(es=>es.forEach(e=>{
     if(e.isIntersecting){animateCount(e.target);countIO.unobserve(e.target)}
-  }),{threshold:.6});
+  }),{threshold:0,rootMargin:'0px 0px -12% 0px'});
   document.querySelectorAll('.num[data-count]').forEach(el=>countIO.observe(el));
 
   // Blagi paralaks na intro slici
@@ -709,6 +712,15 @@
       }
     });
   });
+
+}catch(err){
+  // Ako animacije puknu — prikazi sav sadrzaj, sajt ostaje upotrebljiv
+  document.documentElement.classList.remove('js');
+  document.querySelectorAll('.num[data-count]').forEach(el=>{
+    el.textContent=el.dataset.count+(el.dataset.suffix||'');
+  });
+  console.error('Animacije onemogucene:',err);
+}
 
   // Kontakt forma — šalje preko FormSubmit.co (bez otvaranja email klijenta)
   const form=document.getElementById('contactForm');
